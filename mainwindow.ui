@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>174</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="changeGrammar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Задать грамматику</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="generateChains">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>68</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сгенерировать цепочки</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recognizeChains">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Распознать цепочки</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rulesList">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Список правил</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="saveGrammar"/>
+    <addaction name="savechains"/>
+    <addaction name="savechainrec"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="actionAuthor"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="saveGrammar">
+   <property name="text">
+    <string>Сохранить грамматику</string>
+   </property>
+  </action>
+  <action name="saveChains">
+   <property name="text">
+    <string>Сохранить сгенерированные цепочки</string>
+   </property>
+  </action>
+  <action name="saveChainOutPut">
+   <property name="text">
+    <string>Сохранить вывод цепочки</string>
+   </property>
+  </action>
+  <action name="actionAuthor">
+   <property name="text">
+    <string>Автор</string>
+   </property>
+  </action>
+  <action name="actionTheme">
+   <property name="text">
+    <string>Тема</string>
+   </property>
+  </action>
+  <action name="savechains">
+   <property name="text">
+    <string>Сохранить сгенерированные цепочек</string>
+   </property>
+  </action>
+  <action name="savechainrec">
+   <property name="text">
+    <string>Сохранить распознавание цепочки</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
